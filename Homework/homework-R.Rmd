@@ -1,0 +1,36 @@
+X <- c(1,2,3,4,5) #¼Æ¦r¦V¶q
+X
+weekday_1 <- "Monday"
+weekday_2 <- "Tuesday"
+weekday_3 <- "Wednesday"
+weekday_4 <- "Thursday"
+weekday_5 <-"Friday"
+four_weekdays <- c("Monday","Tuesday","Wednesday","Thursday","Friday")
+four_weekdays
+favorite_day <- four_weekdays[5]
+favorite_day
+not_blue_monday <- four_weekdays != "Monday"
+without_monday <- four_weekdays[c(2,3,4,5)]
+without_monday
+
+speed_char <- c("slow", "fast")
+speed_char
+speed_char_factor <- factor(speed_char, ordered = TRUE, levels = c("slow", "fast"))
+speed_char_factor
+
+
+my_mat <- matrix(1:9, nrow = 3)
+my_mat[2,3]
+
+my_mat <- matrix(1:9, nrow = 3)
+filter <- my_mat %% 2 == 1
+my_mat[filter]
+
+team_name <- c("Chicago Bulls", "Golden State Warriors")
+wins <- c(72, 73)
+losses <- c(10, 9)
+is_champion <- c(TRUE, FALSE)
+season <- c("1995-96", "2015-16")
+great_nba_teams <- data.frame(team_name, wins, losses, is_champion, season, stringsAsFactors = FALSE)
+great_nba_teams$is_champion
+great_nba_teams[, "is_champion"]
